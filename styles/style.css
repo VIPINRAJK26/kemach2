@@ -321,7 +321,7 @@ li {
 
 
 .s5 .row{
-    gap: 1.2rem;
+    /* gap: 1.2rem; */
     padding-bottom: 1rem;
 }
 .s5 .row h3{
@@ -330,7 +330,7 @@ li {
 
 }
 .s5 .row p{
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 400;
     text-align: justify;
 }
@@ -807,6 +807,76 @@ li {
         font-weight: 600;
         
       }
+      .fork-s1 .mbtn {
+        background-color: #c3191c;
+      color: white;
+      margin-top: 15px;
+      font-weight: 600;
+      }
+
+
+
+      .fork-s1 .servmodal .modal-title{
+        font-size: 20px;
+        text-transform: capitalize;
+        color: #af1519;
+      }
+      .fork-s1 .servmodal .modal-body{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
+      .fork-s1 .servmodal .modal-body a{
+        width: fit-content;
+        font-size: 14px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        display: inline-block;
+        text-align: center;
+        font-weight: bold;
+        padding: 1em 1em;
+        border: 1px solid #c3191c;
+        border-radius: 0;
+        position: relative;
+        box-shadow: 0 2px 10px rgba(195, 25, 28.16)
+        0 3px 6px rgba(195, 25, 28,0.1);
+        color: #c3191c;
+        text-decoration: none;
+        transition: 0.3s ease all;
+        z-index: 1;
+    }
+    .fork-s1 .servmodal .modal-body a:before{
+        transition: 0.5s all ease;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        right: 50%;
+        bottom: 0;
+        opacity: 0;
+        content: "";
+        background-color: #c3191c;
+        z-index: -1;
+    }
+    .fork-s1 .servmodal .modal-body a:hover, .fork-s1 .servmodal .modal-body a:focus {
+        color: #ffffff;
+    }
+    
+    .fork-s1 .servmodal .modal-body a:hover:before, .fork-s1 .servmodal .modal-body a:focus:before {
+        transition: 0.5s all ease;
+        left: 0;
+        right: 0;
+        opacity: 1;
+    }
+    .fork-s1 .servmodal .modal-body a:active {
+        transform: scale(0.9);
+    }
+
+    
+
+
+
+
+
       .fork-s2 .serv3 .serv-card .btn:hover{
         background-color: white;
         color: #c3191c;
@@ -1255,4 +1325,19 @@ li {
   background-color: #c3191c;
   margin: 0 auto;
   margin-top: 15px;
+}
+
+
+
+
+
+.s5 .img-box{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gray;
+}
+.s5 .img-box p{
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
 }
