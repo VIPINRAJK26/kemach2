@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Kemach I Single Product</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="icon" type="image/svg" href="./images/KEMACHLOGO-01.svg">
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/style.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="top-header sticky-top shadow">
+        <div class="sub-div container">
+            <div class="left-side">
+                <ul class>
+                    <li>
+                        <a href="https://wa.me/+919778412529"><i class="fa-solid fa-mobile"></i>+91 9778412529</a>
+                    </li>
+                    <li>
+                        <a href><i class="fa-solid fa-envelope"></i>info@kemach.in</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="right-side">
+                <ul class>
+                    <li><a href><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href><i class="fa-brands fa-x-twitter"></i></a></li>
+                    <li><a href><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href><i class="fa-brands fa-pinterest"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="images/KEMACH LOGO web-01.png" width="200" alt />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link"href="index.html">Home</a>
+                        </li>
+                        <div class="dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                Products &
+                                Services
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                              <li><a class="dropdown-item" href="skid-loader.html">Skid-Steer Loaders</a></li>
+                              <li><a class="dropdown-item" href="mini-x.html">Mini Excavators</a></li>
+                              <li><a class="dropdown-item" href="backho.html">Backhoe Loaders</a></li>
+                              <li><a class="dropdown-item" href="rock-b.html">Rock Breakers </a></li>
+                              <li><a class="dropdown-item" href="hydro.html">Hydraulic Attachments & Drill Bits</a></li>
+                              <li><a class="dropdown-item" href="electric.html">Electric Compressors</a></li>
+                              <li><a class="dropdown-item" href="service.html">Service & Parts </a></li>
+
+                          </ul>
+                        </div>
+                        <li class="nav-item">
+                            <a class="nav-link" href="storlocator.html">Store Locator</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <div class="search-box">
+                        <button class="btn-search"><i class="fas fa-search"></i></button>
+                        <input type="text" class="input-search" placeholder="Type to Search..." />
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+<style>
+    .store-locator{
+        padding-block: 3rem;
+    }
+    .store-locator .card{
+        box-shadow: rgba(195, 25, 28, 0.3) 0px 1px 2px 0px, rgba(195, 25, 28, 0.15) 0px 1px 3px 1px;
+        transition: all 0.3s ease-in-out;
+    }
+    .store-locator .card:hover{
+        transform: translateY(-4px);
+    }
+    .store-locator .card .card-body{
+        display: flex;
+        flex-direction: column;
+    }
+    .store-locator .card .card-body a{
+        text-decoration: none;
+        color: black;
+    }
+    .store-locator .card .card-body a i{
+        padding-right: 6px;
+    }
+    .store-locator .card .card-body a:hover{
+        text-decoration: underline;
+        color: #c3191c;
+    }
+    .store-locator .card .card-body h5{
+        margin-bottom: 20px !important;
+        font-weight: 700;
+    }
+    .s-carousel{
+        .carousel-inner {
+            padding: 1em;
+          }
+      
+          .card {
+            margin: 0 0.5em;
+            box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+            border: none;
+          }
+      
+          .carousel-control-prev,
+          .carousel-control-next {
+            background-color: #e1e1e1;
+            width: 6vh;
+            height: 6vh;
+            border-radius: 50%;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1;
+          }
+      
+      
+          .card {
+            border: 0 !important;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            border-radius: 0 !important;
+            transition: all 0.3s ease-in-out;
+          }
+      
+      
+          .card h5 {
+            font-size: 18px;
+            font-weight: 700;
+          }
+      
+          .card p {
+            font-size: 15px;
+            font-weight: 400;
+            text-align: start;
+          }
+      
+          .card a {
+            text-decoration: none;
+            font-size: 15px;
+            color: #c3191c;
+          }
+      
+          .card a:hover {
+            color: #c3191c;
+            text-decoration: underline;
+            transform: scale(1.04);
+          }
+      
+      
+      
+          @media (min-width: 768px) and (max-width: 991px) {
+            .carousel-item {
+              margin-right: 0;
+              flex: 0 0 33.3333%;
+              display: block;
+            }
+      
+            .carousel-inner {
+              display: flex;
+            }
+          }
+      
+          @media (min-width: 992px) {
+            .carousel-item {
+              margin-right: 0;
+              flex: 0 0 25%;
+              display: block;
+            }
+      
+            .carousel-inner {
+              display: flex;
+            }
+          }
+      
+          @media (max-width: 767px) {
+            .card .img-wrapper {
+              height: 17em;
+            }
+          }
+      
+          .card .img-wrapper {
+            max-width: 100%;
+            height: 13em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+      
+          .card img {
+            max-height: 100%;
+          }
+      }
+      .sep{
+        height: 1px;
+        width: 100%;
+        background-color: #c3191c;
+        margin-bottom: 2rem;
+      }
+</style>
+<main class="container ">
+    <section class="row store-locator gx-4 gx-lg-3 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+        <div class="col mb-3">
+            <div class="card h-100" data-aos="fade-up">
+                <div class="card-body">
+                  <h5 class="card-title">KEMACH Equipments Pvt Ltd.</h5>
+                  <a href="https://maps.app.goo.gl/Hw1GwqdpBZt3b9Hn8" class="card-text"> <i class="fa-solid fa-location-dot"></i>
+                    15/340A, Swalih Plaza,Karikkode,  <br>
+                    Okkal Post, Ernakulam – 683550                     
+                  </a> <br>
+                  <a href="tel:9342944900" class="card-text text-decoration-none">
+                    <strong>Contact No:</strong> +91 93429 44900
+                  </a>
+                </div>
+             </div>
+        </div>
+        <div class="col mb-3">
+            <div class="card h-100" data-aos="fade-up">
+                <div class="card-body">
+                  <h5 class="card-title">KEMACH Equipments Pvt Ltd.</h5>
+                  <a href="https://maps.app.goo.gl/G6mmQJzdCTgFxe377" class="card-text"> <i class="fa-solid fa-location-dot"></i>
+                    3/647, 3/648 Kannadi Panchayath,<br>
+                    3rd Ward, Kannadi 1, Palakkad - 678701.
+                  </a> <br>
+                  <a href="tel:9778412521" class="card-text text-decoration-none">
+                    <strong>Contact No:</strong> +91 97784 12521
+                  </a>
+                </div>
+             </div>
+        </div>
+        <div class="col mb-3">
+            <div class="card h-100" data-aos="fade-up">
+                <div class="card-body">
+                  <h5 class="card-title">KEMACH Equipments Pvt Ltd.</h5>
+                  <a href="https://maps.app.goo.gl/iGoAPerNX8mLky6b7" class="card-text"> <i class="fa-solid fa-location-dot"></i>
+                    Door No.13/585, AIRPORT ROAD, <br>
+                    Ramanattukara, Calicut - 673633.
+                  </a> <br>
+                  <a href="tel:8943340268" class="card-text text-decoration-none">
+                    <strong>Contact No:</strong> +91 89433 40268
+                  </a>
+                </div>
+             </div>
+        </div>
+        <div class="col mb-3">
+            <div class="card h-100" data-aos="fade-up">
+                <div class="card-body">
+                  <h5 class="card-title">KEMACH Equipments Pvt Ltd.</h5>
+                  <a href="" class="card-text"> <i class="fa-solid fa-location-dot"></i>
+                    Door No:5/483 E,Ambalachal,  <br>
+                    Near By Kambalakkad Police station, 
+                    Kambalakkad PO, Wayanad - 673122.
+                  </a> <br>
+                  <a href="tel:9342987603" class="card-text text-decoration-none">
+                    <strong>Contact No:</strong> +91 93429 87603
+                  </a>
+                </div>
+             </div>
+        </div>
+        <div class="col mb-3">
+            <div class="card h-100" data-aos="fade-up">
+                <div class="card-body">
+                  <h5 class="card-title">KEMACH Equipments Pvt Ltd.</h5>
+                  <a href="https://maps.app.goo.gl/Ds7G1gcGiNZw6mN57" class="card-text"> <i class="fa-solid fa-location-dot"></i>
+                    No:2188-13, Hazat Palaza, Thavakkara,  <br>
+                    Near Kannur University, Kannur - 670002.
+                  </a> <br>
+                  <a href="tel:8943010333" class="card-text text-decoration-none">
+                    <strong>Contact No:</strong> +91 89430 10333
+                  </a>
+                </div>
+             </div>
+        </div>
+    </section>
+    <div class="sep">
+
+    </div>
+    <section>
+        <div id="carouselExampleControls" class="carousel s-carousel slide">
+            <div class="carousel-inner carousel-inner2 ">
+              <div class="carousel-item carousel-item2 active">
+                <div class="card">
+                  <img
+                    src="https://res.cloudinary.com/doosan-bobcat/image/upload/ar_1.5,c_fill,f_auto,g_auto,q_auto,w_320/v1702831690/bobcat-assets/alao-approved/in/products/material-handling/diesel-forklifts/diesel-forklifts-3-5-to-5-5t-5-series/20231217-bobcat-alao-in-diesel-forklifts-d50c-5-studio-1"
+                    class="img-fluid" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Diesel Forklifts 4 to 5.5t, 9 Series
+                    </h5>
+                    <p class="card-text">
+                      Unleash the power and value of the 9 Series forklifts designed for productivity and user safety. These
+                      forklifts exceed expectations.
+                    </p>
+                    <a href="#" class=" d-flex justify-content-start align-items-center ">Learn More <i
+                        class="fa-solid ps-1 fa-right-long"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item carousel-item2">
+                <div class="card">
+                  <img
+                    src="https://res.cloudinary.com/doosan-bobcat/image/upload/ar_1.5,c_fill,f_auto,g_auto,q_auto,w_320/v1702831690/bobcat-assets/alao-approved/in/products/material-handling/diesel-forklifts/diesel-forklifts-3-5-to-5-5t-5-series/20231217-bobcat-alao-in-diesel-forklifts-d50c-5-studio-1"
+                    class="img-fluid" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Diesel Forklifts 4 to 5.5t, 9 Series
+                    </h5>
+                    <p class="card-text">
+                      Unleash the power and value of the 9 Series forklifts designed for productivity and user safety. These
+                      forklifts exceed expectations.
+                    </p>
+                    <a href="#" class=" d-flex justify-content-start align-items-center ">Learn More <i
+                        class="fa-solid ps-1 fa-right-long"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item carousel-item2">
+                <div class="card">
+                  <img
+                    src="https://res.cloudinary.com/doosan-bobcat/image/upload/ar_1.5,c_fill,f_auto,g_auto,q_auto,w_320/v1702831690/bobcat-assets/alao-approved/in/products/material-handling/diesel-forklifts/diesel-forklifts-3-5-to-5-5t-5-series/20231217-bobcat-alao-in-diesel-forklifts-d50c-5-studio-1"
+                    class="img-fluid" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Diesel Forklifts 4 to 5.5t, 9 Series
+                    </h5>
+                    <p class="card-text">
+                      Unleash the power and value of the 9 Series forklifts designed for productivity and user safety. These
+                      forklifts exceed expectations.
+                    </p>
+                    <a href="#" class=" d-flex justify-content-start align-items-center ">Learn More <i
+                        class="fa-solid ps-1 fa-right-long"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item carousel-item2">
+                <div class="card">
+                  <img
+                    src="https://res.cloudinary.com/doosan-bobcat/image/upload/ar_1.5,c_fill,f_auto,g_auto,q_auto,w_320/v1702831690/bobcat-assets/alao-approved/in/products/material-handling/diesel-forklifts/diesel-forklifts-3-5-to-5-5t-5-series/20231217-bobcat-alao-in-diesel-forklifts-d50c-5-studio-1"
+                    class="img-fluid" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Diesel Forklifts 4 to 5.5t, 9 Series
+                    </h5>
+                    <p class="card-text">
+                      Unleash the power and value of the 9 Series forklifts designed for productivity and user safety. These
+                      forklifts exceed expectations.
+                    </p>
+                    <a href="#" class=" d-flex justify-content-start align-items-center ">Learn More <i
+                        class="fa-solid ps-1 fa-right-long"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item carousel-item2">
+                <div class="card">
+                  <img
+                    src="https://res.cloudinary.com/doosan-bobcat/image/upload/ar_1.5,c_fill,f_auto,g_auto,q_auto,w_320/v1702831690/bobcat-assets/alao-approved/in/products/material-handling/diesel-forklifts/diesel-forklifts-3-5-to-5-5t-5-series/20231217-bobcat-alao-in-diesel-forklifts-d50c-5-studio-1"
+                    class="img-fluid" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Diesel Forklifts 4 to 5.5t, 9 Series
+                    </h5>
+                    <p class="card-text">
+                      Unleash the power and value of the 9 Series forklifts designed for productivity and user safety. These
+                      forklifts exceed expectations.
+                    </p>
+                    <a href="#" class=" d-flex justify-content-start align-items-center ">Learn More <i
+                        class="fa-solid ps-1 fa-right-long"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item carousel-item2">
+                <div class="card">
+                  <img
+                    src="https://res.cloudinary.com/doosan-bobcat/image/upload/ar_1.5,c_fill,f_auto,g_auto,q_auto,w_320/v1702831690/bobcat-assets/alao-approved/in/products/material-handling/diesel-forklifts/diesel-forklifts-3-5-to-5-5t-5-series/20231217-bobcat-alao-in-diesel-forklifts-d50c-5-studio-1"
+                    class="img-fluid" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Diesel Forklifts 4 to 5.5t, 9 Series
+                    </h5>
+                    <p class="card-text">
+                      Unleash the power and value of the 9 Series forklifts designed for productivity and user safety. These
+                      forklifts exceed expectations.
+                    </p>
+                    <a href="#" class=" d-flex justify-content-start align-items-center ">Learn More <i
+                        class="fa-solid ps-1 fa-right-long"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item carousel-item2">
+                <div class="card">
+                  <img
+                    src="https://res.cloudinary.com/doosan-bobcat/image/upload/ar_1.5,c_fill,f_auto,g_auto,q_auto,w_320/v1702831690/bobcat-assets/alao-approved/in/products/material-handling/diesel-forklifts/diesel-forklifts-3-5-to-5-5t-5-series/20231217-bobcat-alao-in-diesel-forklifts-d50c-5-studio-1"
+                    class="img-fluid" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Diesel Forklifts 4 to 5.5t, 9 Series
+                    </h5>
+                    <p class="card-text">
+                      Unleash the power and value of the 9 Series forklifts designed for productivity and user safety. These
+                      forklifts exceed expectations.
+                    </p>
+                    <a href="#" class=" d-flex justify-content-start align-items-center ">Learn More <i
+                        class="fa-solid ps-1 fa-right-long"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item carousel-item2">
+                <div class="card">
+                  <img
+                    src="https://res.cloudinary.com/doosan-bobcat/image/upload/ar_1.5,c_fill,f_auto,g_auto,q_auto,w_320/v1702831690/bobcat-assets/alao-approved/in/products/material-handling/diesel-forklifts/diesel-forklifts-3-5-to-5-5t-5-series/20231217-bobcat-alao-in-diesel-forklifts-d50c-5-studio-1"
+                    class="img-fluid" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Diesel Forklifts 4 to 5.5t, 9 Series
+                    </h5>
+                    <p class="card-text">
+                      Unleash the power and value of the 9 Series forklifts designed for productivity and user safety. These
+                      forklifts exceed expectations.
+                    </p>
+                    <a href="#" class=" d-flex justify-content-start align-items-center ">Learn More <i
+                        class="fa-solid ps-1 fa-right-long"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item carousel-item2">
+                <div class="card">
+                  <img
+                    src="https://res.cloudinary.com/doosan-bobcat/image/upload/ar_1.5,c_fill,f_auto,g_auto,q_auto,w_320/v1702831690/bobcat-assets/alao-approved/in/products/material-handling/diesel-forklifts/diesel-forklifts-3-5-to-5-5t-5-series/20231217-bobcat-alao-in-diesel-forklifts-d50c-5-studio-1"
+                    class="img-fluid" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Diesel Forklifts 4 to 5.5t, 9 Series
+                    </h5>
+                    <p class="card-text">
+                      Unleash the power and value of the 9 Series forklifts designed for productivity and user safety. These
+                      forklifts exceed expectations.
+                    </p>
+                    <a href="#" class=" d-flex justify-content-start align-items-center ">Learn More <i
+                        class="fa-solid ps-1 fa-right-long"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <section class="s4">
+        <div class="row gx-4 gx-lg-3 row-cols-1 row-cols-sm-2 row-cols-xl-2 justify-content-center container" style>
+            <div class="col mb-3">
+                <a href=""><div class="card" data-aos="fade-up">
+                    <img src="images/bi1.jpg" alt>
+                </div></a>
+            </div>
+            <div class="col mb-3">
+                <a href=""><div class="card" data-aos="fade-down">
+                    <img src="images/bi2.jpg" alt>
+                </div></a>
+            </div>
+            <div class="col mb-3">
+                <a href=""><div class="card" data-aos="fade-up">
+                    <img src="images/bi3.jpg" alt>
+                </div></a>
+            </div>
+            <div class="col mb-3">
+                <a href=""><div class="card" data-aos="fade-down">
+                    <img src="images/bi4.jpg" alt>
+                </div></a>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+    <footer class="footer d-flex justify-content-center flex-column align-items-center">
+        <div class="row r1 container ">
+            <div class="col-md-4">
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="forkliftd.html">Products & Services</a></li>
+                    <li><a href="storlocator.html">Store Locator</a></li>
+                    <li><a href="contact.html">Contact Us </a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h4>Address</h4>
+                <ul>
+                    <li><a href>Kemach Equipments Pvt Ltd</a></li>
+                    <li><a href>15/340A, Swalih Plaza,Karikkode,</a></li>
+                    <li><a href>Okkal Post, Ernakulam – 683550</a></li>
+                    <li><a href>Phone / WhatsApp: +91 9778412529</a></li>
+                    <li><a href>Email Id: info@kemach.in </a></li>
+                    <!-- <li><a href></a></li> -->
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1526098.0854557562!2d74.82051070699859!3d11.256112812635035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba65125d7864b43%3A0xc0f479528c814a41!2sBobcat%20Showroom!5e1!3m2!1sen!2sin!4v1726641568963!5m2!1sen!2sin"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <!-- <div class="col-md-3 social">
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><a href><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href><i class="fa-brands fa-x-twitter"></i></a></li>
+                    <li><a href><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href><i class="fa-brands fa-pinterest"></i></a></li>
+                </ul>
+            </div> -->
+        </div>
+        <div class="row r2 container d-flex justify-content-center">
+            <div class="social d-flex justify-content-center flex-column align-items-center">
+                <h4>Follow Us</h4>
+                <ul class="d-flex gap-3">
+                    <li><a href><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href><i class="fa-brands fa-x-twitter"></i></a></li>
+                    <li><a href><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href><i class="fa-brands fa-pinterest"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="copy d-flex justify-content-center align-items-center">
+        <div class="row container">
+            <p>@2024 Copywrite</p>
+            <p><a href="terms.html">Terms & Conditions</a><span> I </span><a href="privacy.html">Privacy
+              Policy</a></p>
+            <p>Powered by : <a href="https://exmedia.in" class="ex">exmedia.in </a></p>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+        <script>
+            var multipleCardCarousel = document.querySelector("#carouselExampleControls");
+if (window.matchMedia("(min-width: 768px)").matches) {
+  var carousel = new bootstrap.Carousel(multipleCardCarousel, {
+    interval: false,
+  });
+  var carouselInner = document.querySelector(".carousel-inner2");
+  var carouselItems = document.querySelectorAll(".carousel-item2");
+  var cardWidth = carouselItems[0]?.offsetWidth || 0; // Added optional chaining and default value
+  var scrollPosition = 0;
+
+  document
+    .querySelector(".carousel-control-next")
+    .addEventListener("click", function () {
+      if (scrollPosition < carouselInner.scrollWidth - cardWidth * 4) {
+        scrollPosition += cardWidth;
+        carouselInner.scrollTo({ left: scrollPosition, behavior: "smooth" });
+      }
+    });
+
+  document
+    .querySelector(".carousel-control-prev")
+    .addEventListener("click", function () {
+      if (scrollPosition > 0) {
+        scrollPosition -= cardWidth;
+        carouselInner.scrollTo({ left: scrollPosition, behavior: "smooth" });
+      }
+    });
+} else {
+  multipleCardCarousel.classList.add("slide");
+}
+
+        </script>
+</body>
+
+</html>

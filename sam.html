@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Working Progress</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f3f4f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .container h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .container p {
+            font-size: 1.5rem;
+            color: #555;
+        }
+
+        .progress-bar {
+            width: 80%;
+            height: 30px;
+            background-color: #ddd;
+            border-radius: 25px;
+            margin: 20px auto;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .progress-bar-fill {
+            height: 100%;
+            width: 0%;
+            background-color: #c3191c;
+            transition: width 1s ease;
+            border-radius: 25px;
+        }
+
+        .loading-text {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Working Progress</h1>
+        <p>We're currently working on this page.</p>
+
+        <div class="progress-bar">
+            <div class="progress-bar-fill"></div>
+        </div>
+
+        <p class="loading-text">0% Complete</p>
+    </div>
+
+    <script>
+        const progressBarFill = document.querySelector('.progress-bar-fill');
+        const loadingText = document.querySelector('.loading-text');
+        let progress = 0;
+
+        const updateProgress = () => {
+            if (progress < 100) {
+                progress += 1;
+                progressBarFill.style.width = progress + '%';
+                loadingText.textContent = progress + '% Complete';
+            } else {
+                // Reset back to 0% once 100% is reached
+                progress = 0;
+            }
+        };
+
+        // Repeat the progress bar filling in an infinite loop
+        setInterval(updateProgress, 50);
+    </script>
+</body>
+</html>
