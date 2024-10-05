@@ -464,33 +464,20 @@ li {
   padding-bottom: 1.25rem;
   color: #fff;
   top: 35%;
-  background-color: #c3191c;
+  /* background-color: #c3191c; */
   height: fit-content;
   padding-inline: 1rem;
   width: fit-content;
   /* animation: fadeup .3s ease-in; */
   /* border-radius: 20px; */
   /* border-radius: 16% 84% 13% 87% / 77% 19% 81% 23% ; */
-  border: 1px solid white;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  /* border: 1px solid white; */
+  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
   display: flex;
   justify-content: center;
   transition: all 0.3s ease-in-out;
 }
 
-#carouselExampleAutoplaying .carousel-caption:hover{
-  cursor: pointer;
-  background-color: white;
-  color: #c3191c;
-  border: 1px solid #c3191c;
-  animation: none;
-  transform: scale(1.05);
-}
-#carouselExampleAutoplaying .carousel-caption:hover h4{
-  text-shadow: rgba(255, 255, 255, 0.4) 0px 0px 2px, 
-  rgba(255, 255, 255, 0.65) 0px 4px 6px, 
-  rgba(255, 255, 255, 0.08) 0px 1px 0px;
-}
 
 
 
