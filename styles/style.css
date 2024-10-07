@@ -342,8 +342,10 @@ li {
     font-size: 30px;
     font-weight: 300;
 }
-.s6 .r1 q{
-    font-style: italic;
+.s6 .r1 p{
+    /* font-style: italic; */
+    font-weight: bold;
+    font-size: 19px;
 }
 .s6 .row p{
     font-size: 18px;
